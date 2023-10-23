@@ -1,0 +1,25 @@
+img {
+    width: 120px;
+    height: 120px;
+    margin-left: 60px;
+    margin-top: 10px;;
+}
+#longimg {
+    height:120px;
+    width: 200px;
+}
+#mmsql {
+    height:140px;
+    width: 210px;
+}
+#flask {
+    height:80px;
+    width: 150px;
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

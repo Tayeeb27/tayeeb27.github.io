@@ -1,0 +1,47 @@
+.timeline-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+}
+
+.timeline-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-line {
+    border: 2px solid #000; 
+    height: 700px; 
+    width: 2px; 
+    margin: 0 20px; 
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+}
+
+
+.top-left {
+
+}
+
+
+.middle-right {
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+
+.bottom-left {
+    /* Additional styling for bottom-left item, if desired */
+    margin-top:300px;
+}
+.timeline-content{
+    width:350px;
+}
+p{
+    
+}
