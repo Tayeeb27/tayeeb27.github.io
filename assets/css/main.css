@@ -2670,9 +2670,13 @@ input, select, textarea {
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
 		}
-
+	#TCG{
+		height:400px;
+		width:280px;
+		margin:auto;
+	}
 /* Actions */
-
+	
 	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
