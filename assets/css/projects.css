@@ -18,10 +18,10 @@ img {
     width:500px;
     height:400px;
 }
-#tcg {
+#TCG {
     margin:auto;
-    width:200px;
-    height:300px;
+    width:400px;
+    height:600px;
 }
 #html {
     margin:auto;
@@ -56,3 +56,45 @@ img {
     width: 200px;
     height: 100px;
   }
+  @media (max-width: 768px) {
+    
+  #longimg {
+    height:120px;
+    width: 200px;
+    margin-left: 60px;
+  }
+  #mmsql {
+      height:140px;
+      width: 210px;
+  }
+  #project {
+      margin:auto;
+      width:300px;
+      height:200px;
+  }
+  #TCG {
+      margin:auto;
+      width:200px;
+      height:300px;
+  }
+  #html {
+      margin:auto;
+      width:500px;
+      height:300px;
+  }
+  #newsapi {
+    width: 100px;
+    height: 50px;
+  }
+  img {
+    width:80px;
+    height:80px;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+  .carousel-img{
+    margin:auto;
+    width:300px;
+    height:200px;
+  }
+}
