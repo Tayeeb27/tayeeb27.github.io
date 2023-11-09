@@ -50,8 +50,30 @@ p{
         font-size: 16px;
     }
 
+    
+    .timeline-horizontal{
+        padding:10px;
+    }
+    .timeline-line {
+        display: none; /* Hide the timeline line on smaller screens if not needed */
+    }
+    
     .timeline-item {
         flex: 0 0 100%;
         max-width: 100%;
+        margin: 30px 0; /* Adjust margin for spacing between items */
     }
+    .top-left{
+        padding-top: -10px;;
+    }
+    .bottom-left{
+        margin-top:200px;
+    }
+    .middle-right {
+        margin-left: -350px;
+        margin-top: 200px;
+        
+    }
+    
 }
+
