@@ -11,7 +11,7 @@
 }
 
 .timeline-line {
-    border: 2px solid #000; 
+    border: 2px solid rgb(111, 0, 0); 
     height: 700px; 
     width: 2px; 
     margin: 0 20px; 
