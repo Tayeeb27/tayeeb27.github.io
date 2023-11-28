@@ -12,7 +12,7 @@
 
 .timeline-line {
     border: 2px solid rgb(111, 0, 0); 
-    height: 700px; 
+    height: 750px; 
     width: 2px; 
     margin: 0 20px; 
 }
@@ -37,7 +37,7 @@
 
 .bottom-left {
     /* Additional styling for bottom-left item, if desired */
-    margin-top:300px;
+    margin-top:200px;
 }
 .timeline-content{
     width:350px;
