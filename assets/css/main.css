@@ -4383,7 +4383,7 @@ input, select, textarea {
 		}
 
 	#copyright {
-		color: #ffffff;
+		color: rgb(111, 0, 0);
 		position: relative;
 		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
@@ -4401,11 +4401,11 @@ input, select, textarea {
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
-			color: #ffffff;
+			color: rgb(111, 0, 0);
 		}
 
 		#copyright a {
-			color: #ffffff;
+			color: rgb(111, 0, 0);
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
@@ -4415,11 +4415,11 @@ input, select, textarea {
 			}
 
 		#copyright strong, #copyright b {
-			color: #ffffff;
+			color: rgb(111, 0, 0);
 		}
 
 		#copyright h1, #copyright h2, #copyright h3, #copyright h4, #copyright h5, #copyright h6 {
-			color: #ffffff;
+			color: rgb(111, 0, 0);
 		}
 
 		#copyright blockquote {
@@ -4447,6 +4447,7 @@ input, select, textarea {
 		}
 
 			#copyright ul li {
+				color:rgb(111, 0, 0);
 				border-left: solid 2px;
 				display: inline-block;
 				line-height: 1;
