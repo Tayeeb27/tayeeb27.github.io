@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/contact.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -26,7 +27,7 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li ><a href="about.html">About Me</a></li>
+							<li><a href="about.html">About Me</a></li>
 							<li><a href="education.html">Education</a></li>
 							<li><a href="work-experience.html">Work Experience</a></li>
 							<li><a href="skills.html">Skills</a></li>
@@ -39,12 +40,12 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main">
+					<div id="main" class="page-contact">
 						<section class="post">
 							<header class="major">
 								<h1>Contact Me<br />
 								</h1>
-								<p>Feel free to contact me using the form below or by using the contact details provided.</p>
+								<p>Send a message with the form, or use the contact details for a direct reply.</p>
 							</header>
 						</section>
 				<!-- Footer -->
@@ -54,11 +55,11 @@
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" autocomplete="name" required />
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="email" name="email" id="email" autocomplete="email" required />
 									</div>
 									<div class="field">
 										<label for="subject">Subject</label>
@@ -66,27 +67,26 @@
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<textarea name="message" id="message" rows="5" required></textarea>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><button type="submit">Send</button></li>
+									<li><button type="submit">Send message</button></li>
 								</ul>
 							</form>
 						</section>
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>2 Cae Brynton Road<br />
-								Newport, South Wales, NP20 3GE</p>
+								Newport, South Wales</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(+44)7516287962</a></p>
+								<p><a href="tel:+447516287962">(+44) 7516 287962</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">tayeeb27@hotmail.com</a></p>
+								<p><a href="mailto:tayeeb27@hotmail.com">tayeeb27@hotmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>

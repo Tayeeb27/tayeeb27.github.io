@@ -1,0 +1,237 @@
+/* Contact page — layout, contrast, and form polish (loads after main.css) */
+
+.page-contact #footer {
+	background: linear-gradient(165deg, #fafafa 0%, #f0f0f2 100%);
+	border: 1px solid #e4e4e7;
+	border-radius: 12px;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+	color: #3d4449;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto 2rem;
+	overflow: hidden;
+	width: 100%;
+	max-width: none;
+}
+
+.page-contact #footer h1,
+.page-contact #footer h2,
+.page-contact #footer h3,
+.page-contact #footer h4,
+.page-contact #footer p,
+.page-contact #footer label,
+.page-contact #footer strong,
+.page-contact #footer a {
+	color: #3d4449;
+}
+
+.page-contact #footer a {
+	border-bottom-color: rgba(111, 0, 0, 0.35);
+}
+
+.page-contact #footer a:hover {
+	color: #ef1818 !important;
+	border-bottom-color: transparent;
+}
+
+.page-contact #footer > section:first-child {
+	background: #ffffff;
+	border-left: none;
+	flex: 1 1 22rem;
+	padding: 3rem 3rem 2.5rem;
+	border-radius: 10px;
+
+}
+
+.page-contact #footer > section.split {
+	background: transparent;
+	border-left: none !important;
+	border-top: none !important;
+	flex: 1 1 18rem;
+	padding: 1.25rem 0 1.5rem;
+}
+
+.page-contact #footer > section.split > section {
+	align-items: flex-start !important;
+	background: #ffffff;
+	border: 1px solid #e8e8ec !important;
+	border-radius: 10px;
+	border-top: 1px solid #e8e8ec !important;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+	margin: 0 1.25rem 0.85rem;
+	padding: 1.15rem 1.35rem !important;
+}
+
+.page-contact #footer > section.split > section:first-child {
+	margin-top: 0.5rem;
+	padding-top: 1.25rem !important;
+}
+
+.page-contact #footer > section.split > section:last-child {
+	margin-bottom: 1.25rem;
+	padding-bottom: 1.35rem !important;
+}
+
+.page-contact #footer > section.split.contact > section > :first-child {
+	color: rgb(111, 0, 0);
+	font-family: "Rockwell", Helvetica, sans-serif;
+	font-size: 0.72rem !important;
+	font-weight: 900;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	width: 5.5rem;
+}
+
+.page-contact #footer > section.split.contact > section > :last-child {
+	font-size: 0.95rem !important;
+	line-height: 1.65;
+	text-align: left;
+}
+
+.page-contact #footer > section.split.contact > section > :last-child p {
+	font-size: 0.95rem !important;
+	margin: 0;
+	text-align: left;
+}
+
+.page-contact #footer form label {
+	color: #5c656d;
+	display: block;
+	font-family: "Rockwell", Helvetica, sans-serif;
+	font-size: 0.72rem !important;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	margin-bottom: 0.4rem;
+	text-transform: uppercase;
+}
+
+.page-contact #footer .fields {
+	display: grid;
+	gap: 1rem 1.25rem;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 0.5rem;
+}
+
+.page-contact #footer .field:nth-child(3),
+.page-contact #footer .field:nth-child(4) {
+	grid-column: 1 / -1;
+}
+
+.page-contact #footer .field {
+	margin: 0;
+}
+
+.page-contact #footer input[type="text"],
+.page-contact #footer input[type="email"],
+.page-contact #footer textarea {
+	background: #fafafa;
+	border: 1px solid #d8dcdf !important;
+	border-radius: 8px;
+	color: #212931;
+	font-family: "Merriweather", Georgia, serif;
+	font-size: 0.95rem;
+	padding: 0.65rem 0.85rem;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+	width: 100%;
+}
+
+.page-contact #footer textarea {
+	min-height: 8rem;
+	resize: vertical;
+}
+
+.page-contact #footer input:focus,
+.page-contact #footer textarea:focus {
+	background: #fff;
+	border-color: rgb(111, 0, 0) !important;
+	box-shadow: 0 0 0 3px rgba(111, 0, 0, 0.12);
+	outline: none;
+}
+
+.page-contact #footer ul.actions {
+	margin-top: 1.25rem;
+	padding: 0;
+}
+
+.page-contact #footer button[type="submit"],
+.page-contact #footer .button.primary {
+	background-color: rgb(111, 0, 0) !important;
+	border: none !important;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(111, 0, 0, 0.25);
+	color: #ffffff !important;
+	cursor: pointer;
+	font-family: "Rockwell", Helvetica, sans-serif;
+	font-size: 0.85rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.page-contact #footer button[type="submit"]:hover,
+.page-contact #footer .button.primary:hover {
+	background-color: #ef1818 !important;
+	box-shadow: 0 4px 14px rgba(239, 24, 40, 0.35);
+	color: #ffffff !important;
+	transform: translateY(-1px);
+}
+
+.page-contact #footer ul.icons.alt li a.icon:before {
+	box-shadow: inset 0 0 0 2px #d8dcdf;
+}
+
+.page-contact #footer ul.icons.alt li a.icon:hover:before {
+	box-shadow: inset 0 0 0 2px rgb(111, 0, 0);
+}
+
+.page-contact .post header.major p {
+	color: #5c656d;
+	font-size: 1rem;
+	line-height: 1.75;
+	max-width: 36rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+
+	.page-contact #footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.page-contact #footer > section:first-child {
+		border-bottom: none;
+		border-right: none;
+		padding: 2.5rem 2rem 2rem;
+	}
+
+	.page-contact #footer > section.split > section {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+@media screen and (max-width: 736px) {
+
+	.page-contact #footer .fields {
+		grid-template-columns: 1fr;
+	}
+
+	.page-contact #footer .field:nth-child(3),
+	.page-contact #footer .field:nth-child(4) {
+		grid-column: auto;
+	}
+
+	.page-contact #footer > section:first-child {
+		padding: 2rem 1.5rem 1.75rem;
+	}
+
+	.page-contact #footer > section.split > section {
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+		padding: 1rem 1.1rem !important;
+	}
+}
