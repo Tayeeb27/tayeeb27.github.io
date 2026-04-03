@@ -1,7 +1,198 @@
-.projImg {
-    height: 300px; 
-    object-fit:contain; 
+/*
+ * Home / projects listing (index.html, index2.html)
+ * Cards and accents aligned with timeline + contact styling.
+ */
+
+/* Hero */
+#intro h1 {
+	text-shadow: 0 0.12em 0.35em rgba(0, 0, 0, 0.35);
 }
+
+#intro p {
+	font-size: 1.15rem;
+	line-height: 1.55;
+	max-width: 28rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Featured “My Projects” band */
+#main > .post.featured header.major p {
+	color: #5c656d;
+	font-size: 1.05rem;
+	line-height: 1.75;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40rem;
+}
+
+#main > .post.featured header.major h2 a {
+	color: inherit;
+	transition: color 0.2s ease;
+}
+
+#main > .post.featured header.major h2 a:hover {
+	color: rgb(111, 0, 0);
+}
+
+/* Projects grid → card layout */
+#main > .posts {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	padding: 2.5rem 3rem 3.5rem !important;
+}
+
+#main > .posts > article {
+	background: #fafafa;
+	border: 1px solid #e8e8ec !important;
+	border-left: 4px solid rgb(111, 0, 0) !important;
+	border-radius: 12px;
+	border-top-width: 1px !important;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0 !important;
+	flex-shrink: 1 !important;
+	margin: 0 !important;
+	padding: 1.65rem 1.75rem 1.75rem !important;
+	text-align: left;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+	width: 100% !important;
+}
+
+#main > .posts > article:hover {
+	border-color: rgba(111, 0, 0, 0.25) !important;
+	box-shadow: 0 10px 32px rgba(111, 0, 0, 0.09);
+	transform: translateY(-3px);
+}
+
+#main > .posts > article header {
+	text-align: left;
+}
+
+#main > .posts > article header h2 {
+	font-size: 1.1rem;
+	letter-spacing: 0.04em;
+	line-height: 1.35;
+	margin: 0 0 0.75rem 0;
+	text-transform: uppercase;
+}
+
+#main > .posts > article header h2 a {
+	border-bottom: none;
+	color: rgb(111, 0, 0);
+	transition: color 0.2s ease;
+}
+
+#main > .posts > article header h2 a:hover {
+	color: #ef1818;
+}
+
+#main > .posts > article .image.fit {
+	background: #f0f0f2;
+	border-radius: 10px;
+	margin: 0 0 1.15rem 0;
+	overflow: hidden;
+}
+
+#main > .posts .projImg {
+	display: block;
+	height: 220px;
+	margin: 0 auto;
+	object-fit: contain;
+	padding: 0.65rem;
+	width: 100%;
+}
+
+#main > .posts > article > p {
+	color: #3d4449;
+	font-size: 0.95rem;
+	hyphens: auto;
+	line-height: 1.65;
+	margin-bottom: 1.35rem;
+	text-align: left;
+}
+
+#main > .posts ul.actions.special {
+	justify-content: flex-start;
+	margin-bottom: 0;
+	margin-top: auto;
+}
+
+#main > .posts .button {
+	background-color: rgb(111, 0, 0) !important;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(111, 0, 0, 0.25);
+	color: #ffffff !important;
+	font-family: "Rockwell", Helvetica, sans-serif;
+	font-size: 0.72rem !important;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+#main > .posts .button:hover {
+	background-color: #ef1818 !important;
+	box-shadow: 0 4px 16px rgba(239, 24, 40, 0.35) !important;
+	color: #ffffff !important;
+	transform: translateY(-1px);
+}
+
+/* Pagination */
+#main > footer {
+	padding: 2rem 2rem 3rem !important;
+}
+
+#main > footer .pagination a,
+#main > footer .pagination span {
+	border-radius: 8px;
+	margin: 0 0.2rem;
+	transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+#main > footer .pagination a.page.active {
+	background-color: rgb(111, 0, 0) !important;
+	border-color: rgb(111, 0, 0) !important;
+	color: #ffffff !important;
+}
+
+#main > footer .pagination a:not(.active):hover {
+	border-color: rgb(111, 0, 0) !important;
+	color: rgb(111, 0, 0) !important;
+}
+
+/* The Curry Garden link spacing */
 .TCG {
-    letter-spacing: 0.03em;;
+	letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 980px) {
+
+	#main > .posts {
+		gap: 1.5rem;
+		padding: 2rem 2rem 2.5rem !important;
+	}
+}
+
+@media screen and (max-width: 736px) {
+
+	#main > .posts {
+		grid-template-columns: 1fr;
+		padding: 1.5rem 1.5rem 2rem !important;
+	}
+
+	#main > .posts > article {
+		border-left: 4px solid rgb(111, 0, 0) !important;
+		border-top: 1px solid #e8e8ec !important;
+	}
+
+	#main > .posts .projImg {
+		height: 200px;
+	}
+
+	#intro p {
+		font-size: 1rem;
+	}
 }

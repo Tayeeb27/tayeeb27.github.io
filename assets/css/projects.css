@@ -1,100 +1,307 @@
-img {
-    width:120px;
-    height:120px;
-    margin-left: 60px;
-    margin-top: 10px;
+/*
+ * Individual project pages — cards, maroon accent, tech icons (scoped).
+ * Loads after main.css on all project detail HTML files.
+ */
+
+/* ---- Back link row ---- */
+#main > div:first-of-type:has(> a.button) {
+	border-top: 0 !important;
+	padding: 3rem 2rem 0 !important;
 }
-#longimg {
-    height:120px;
-    width: 200px;
-    margin-left: 60px;
+
+#main > div:first-of-type:has(> a.button) .button {
+	background-color: transparent !important;
+	border-radius: 8px;
+	box-shadow: inset 0 0 0 2px rgb(111, 0, 0) !important;
+	color: rgb(111, 0, 0) !important;
+	font-family: "Rockwell", Helvetica, sans-serif;
+	font-size: 0.72rem !important;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	transition: background-color 0.2s ease, color 0.2s ease;
 }
-#mmsql {
-    height:140px;
-    width: 210px;
+
+#main > div:first-of-type:has(> a.button) .button:hover {
+	background-color: rgb(111, 0, 0) !important;
+	box-shadow: inset 0 0 0 2px rgb(111, 0, 0) !important;
+	color: #ffffff !important;
 }
+
+/* ---- Featured hero (title + screenshot / carousel) ---- */
+#main > article.post.featured {
+	background: #fafafa;
+	border: 1px solid #e8e8ec;
+	border-left: 4px solid rgb(111, 0, 0);
+	border-radius: 12px;
+	border-top: none !important;
+	box-shadow: 0 4px 22px rgba(0, 0, 0, 0.06);
+	margin: 1.25rem 30px 0 !important;
+	padding: 2rem 2.25rem 2.5rem !important;
+}
+
+#main > article.post.featured header.major h2 {
+	margin: 0 0 1.25rem 0;
+}
+
+#main > article.post.featured header.major h2 a {
+	border-bottom: none;
+	color: rgb(111, 0, 0);
+	transition: color 0.2s ease;
+}
+
+#main > article.post.featured header.major h2 a:hover {
+	color: #ef1818;
+}
+
+#main article.post.featured .image.fit {
+	background: #f0f0f2;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto 0.5rem;
+	overflow: hidden;
+}
+
+#main article.post.featured .image.fit img,
+#main article.post.featured img#project {
+	display: block;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 28rem;
+	max-width: 100%;
+	object-fit: contain;
+	width: auto;
+}
+
+#main img#TCG {
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	max-width: min(28rem, 100%);
+	width: auto;
+}
+
+#main img#html {
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	max-height: 20rem;
+	max-width: min(32rem, 100%);
+	width: auto;
+}
+
+/* ---- Carousel ---- */
+#main .carousel-inner {
+	background: #f0f0f2;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+#main .carousel-item {
+	display: none;
+	float: left;
+	margin: 0;
+	padding: 0.75rem;
+	position: relative;
+	transition: opacity 0.25s ease;
+	width: 100%;
+}
+
+#main .carousel-item.active {
+	display: block;
+}
+
+#main .carousel-img {
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	max-height: 22rem;
+	max-width: 100%;
+	object-fit: contain;
+	width: auto;
+}
+
+/* ---- Content sections (tech stack, background, etc.) ---- */
+#main > section {
+	background: #fafafa;
+	border: 1px solid #e8e8ec !important;
+	border-left: 4px solid rgb(111, 0, 0) !important;
+	border-radius: 12px;
+	border-top: none !important;
+	box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+	margin: 1.5rem 30px 0 !important;
+	padding: 2rem 2.25rem !important;
+}
+
+#main > section h2 {
+	border-bottom: 1px solid rgba(111, 0, 0, 0.12);
+	color: rgb(111, 0, 0);
+	font-size: 0.95rem;
+	letter-spacing: 0.1em;
+	margin: 0 0 1.25rem 0;
+	padding-bottom: 0.65rem;
+	text-transform: uppercase;
+}
+
+#main > section p {
+	color: #3d4449;
+	font-size: 0.95rem;
+	line-height: 1.7;
+	margin: 0 0 1rem 0;
+	text-align: left;
+}
+
+#main > section p:last-child {
+	margin-bottom: 0;
+}
+
+#main > section ul:not(.icons) {
+	margin: 0;
+	padding-left: 1.1rem;
+}
+
+#main > section ul:not(.icons) li {
+	color: #3d4449;
+	line-height: 1.65;
+	margin-bottom: 0.45rem;
+	padding-left: 0.25rem;
+}
+
+#main > section ul:not(.icons) li:last-child {
+	margin-bottom: 0;
+}
+
+/* ---- Tech stack icon row (scoped — no global img {}) ---- */
+#main > section ul.icons {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 1.35rem;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0.25rem 0 0;
+}
+
+#main > section ul.icons li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#main > section ul.icons img {
+	display: block;
+	height: 52px;
+	margin: 0;
+	object-fit: contain;
+	width: 52px;
+}
+
+#main > section ul.icons img#longimg {
+	height: 52px;
+	width: 88px;
+}
+
+#main > section ul.icons img#mmsql {
+	height: 56px;
+	width: 100px;
+}
+
+#main > section ul.icons img#newsapi {
+	height: 48px;
+	width: 96px;
+}
+
+/* ---- CTA rows (GitHub, live demo, etc.) ---- */
+#main > div:not(:first-of-type):has(> a.button) {
+	border-top: none !important;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 1.5rem 0 0 !important;
+	padding: 0 0 3rem !important;
+}
+
+#main > div:not(:first-of-type):has(> a.button) .button {
+	background-color: rgb(111, 0, 0) !important;
+	border-radius: 8px;
+	box-shadow: 0 2px 12px rgba(111, 0, 0, 0.25);
+	color: #ffffff !important;
+	font-family: "Rockwell", Helvetica, sans-serif;
+	font-size: 0.72rem !important;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+	margin: 1.5rem 30px 0 !important;
+}
+
+#main > div:not(:first-of-type):has(> a.button) .button:hover {
+	background-color: #ef1818 !important;
+	box-shadow: 0 4px 16px rgba(239, 24, 40, 0.35) !important;
+	color: #ffffff !important;
+	transform: translateY(-1px);
+}
+
+/* ---- Legacy / page-specific ids (hero screenshots) ---- */
 #project {
-    margin:auto;
-    width:500px;
-    height:400px;
+	height: auto;
+	margin: 0 auto;
+	max-height: 28rem;
+	max-width: 100%;
+	width: auto;
 }
+
 #TCG {
-    margin:auto;
-    width:400px;
-    height:600px;
+	height: auto;
+	max-width: min(28rem, 100%);
 }
+
 #html {
-    margin:auto;
-    width:500px;
-    height:300px;
+	height: auto;
+	max-height: 20rem;
+	max-width: min(32rem, 100%);
 }
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel-item {
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    transition: transform 0.1s ease-in-out;
-  }
-  
-  .carousel-item.active {
-    display: block;
-  }
-  .carousel-img{
-    margin:auto;
-    width:500px;
-    height:300px;
-  }
-  #newsapi {
-    width: 200px;
-    height: 100px;
-  }
-  @media (max-width: 768px) {
-    
-  #longimg {
-    height:120px;
-    width: 200px;
-    margin-left: 60px;
-  }
-  #mmsql {
-      height:140px;
-      width: 210px;
-  }
-  #project {
-      margin:auto;
-      width:300px;
-      height:200px;
-  }
-  #TCG {
-      margin:auto;
-      width:200px;
-      height:300px;
-  }
-  #html {
-      margin:auto;
-      width:500px;
-      height:300px;
-  }
-  #newsapi {
-    width: 100px;
-    height: 50px;
-  }
-  img {
-    width:80px;
-    height:80px;
-    margin-left: 60px;
-    margin-top: 10px;
-  }
-  .carousel-img{
-    margin:auto;
-    width:300px;
-    height:200px;
-  }
+
+@media screen and (max-width: 736px) {
+
+	#main > div:first-of-type:has(> a.button) {
+		padding: 2.5rem 2rem 0 !important;
+	}
+
+	#main > article.post.featured {
+		padding: 1.5rem 1.35rem 2rem !important;
+	}
+
+	#main > section {
+		padding: 1.5rem 1.35rem !important;
+	}
+
+	#main > div:not(:first-of-type):has(> a.button) {
+		flex-direction: column;
+		padding-bottom: 2.5rem !important;
+	}
+
+	#main .carousel-img {
+		max-height: 16rem;
+	}
+
+	#main > section ul.icons img {
+		height: 44px;
+		width: 44px;
+	}
+
+	#main > section ul.icons img#longimg {
+		height: 44px;
+		width: 76px;
+	}
+
+	#main > section ul.icons img#mmsql {
+		height: 48px;
+		width: 88px;
+	}
 }
+
