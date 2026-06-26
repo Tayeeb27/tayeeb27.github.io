@@ -2,8 +2,8 @@
 title: MyTimetable
 subtitle: Calendar App
 summary: A themed calendar app with Chrome extension and shareable calendar links for students.
-featured: false
-order: 7
+featured: true
+order: 4
 tech: [React, Node.js, Chrome Extension]
 images: [Calendar2.png, Calendar1.png, Calendar3.png]
 imageAlt: MyTimetable calendar app screenshots

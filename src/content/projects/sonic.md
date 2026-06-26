@@ -14,4 +14,4 @@ repoLabel2: HTML/JS Source
 
 ## Background
 
-During my time at La Fosse we were required to utilise OpenAI to create a chatbot with a character of our choice — I chose Sonic the Hedgehog. Although I am displaying a React SPA version of the project, I also have an HTML/JS version.
+During my time at [La Fosse](https://www.lafosse.com/academy) we were required to utilise OpenAI to create a chatbot with a character of our choice — I chose Sonic the Hedgehog. Although I am displaying a React SPA version of the project, I also have an HTML/JS version.

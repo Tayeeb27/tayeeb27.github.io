@@ -12,4 +12,4 @@ repoUrl: https://github.com/Tayeeb27/Connect-4
 
 ## Background
 
-In LAP 1 (1st Module) at La Fosse we had a hackathon to create a text-based game in JavaScript. I chose to create a Connect 4 game and wanted to make it feel authentic by changing the colours in the terminal.
+In LAP 1 (1st Module) at [La Fosse](https://www.lafosse.com/academy) we had a hackathon to create a text-based game in JavaScript. I chose to create a Connect 4 game and wanted to make it feel authentic by changing the colours in the terminal.

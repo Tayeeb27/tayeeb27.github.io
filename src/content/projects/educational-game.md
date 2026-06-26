@@ -12,7 +12,7 @@ repoUrl: https://github.com/ishaaq08/ctrl-alt-defeat/
 
 ## Background
 
-At La Fosse Academy, we were required to solve the problem of the lack of engagement in non-STEM subjects. To resolve this, we created an E-learning application called Brain Boost in which users can play games — specifically a quiz and card matching game — and learn non-STEM subjects in an enjoyable and stimulating manner.
+At [La Fosse Academy](https://www.lafosse.com/academy), we were required to solve the problem of the lack of engagement in non-STEM subjects. To resolve this, we created an E-learning application called Brain Boost in which users can play games — specifically a quiz and card matching game — and learn non-STEM subjects in an enjoyable and stimulating manner.
 
 The application consists of a frontend with two games and a backend that includes the data used for our games.
 

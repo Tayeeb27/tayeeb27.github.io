@@ -2,8 +2,8 @@
 title: The Curry Garden
 subtitle: Ordering and Booking System
 summary: A restaurant booking and ordering system built with VB.NET and a real client brief.
-featured: true
-order: 3
+featured: false
+order: 5
 tech: [VB.NET, SQL Server, Windows Forms]
 images: [TCG.png]
 imageAlt: The Curry Garden ordering and booking system

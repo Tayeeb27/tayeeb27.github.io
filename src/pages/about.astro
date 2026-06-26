@@ -2,6 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import site from '../data/site.json';
 import skills from '../data/skills.json';
+import { linkCompanies } from '../utils/linkCompanies';
+
+const linkClass = 'text-lg leading-relaxed text-muted [&_a]:text-accent [&_a]:transition hover:[&_a]:text-cyan-300';
 ---
 
 <BaseLayout title="About" description={`About ${site.name} — ${site.role}`}>
@@ -45,15 +48,21 @@ import skills from '../data/skills.json';
           <p class="text-foreground">
             I'm a full-stack software engineer based in Newport, UK, with over two years of commercial experience shipping production software for consumer platforms and B2B SaaS.
           </p>
-          <p>
-            I work end to end — from React and TypeScript front ends through REST APIs, databases, and cloud deployment. At Kukd.com I progressed from junior developer to software engineer, delivering apps used by 50,000+ customers monthly. At TalentMapper I was one of the first in-house engineers, leading major front-end migrations, building AI-powered features, and owning the analytics platform the business runs on.
-          </p>
-          <p>
+          <p
+            class={linkClass}
+            set:html={linkCompanies(
+              'I work end to end — from React and TypeScript front ends through REST APIs, databases, and cloud deployment. At Kukd.com I progressed from junior developer to software engineer, delivering apps used by 50,000+ customers monthly. At TalentMapper I was one of the first in-house engineers, leading major front-end migrations, building AI-powered features, and owning the analytics platform the business runs on.',
+            )}
+          />
+          <p class={linkClass}>
             What I care about in practice: taking work from brief to sign-off, writing code the team can maintain, and closing the gap between engineering and the business. I've deployed Metabase dashboards that feed sales conversations, documented patterns for the team, and picked up DevOps along the way — GCP, Grafana, Terraform, CI/CD.
           </p>
-          <p>
-            Outside full-time roles I take on freelance contract work — Ticket Tiger, d3-digital, and others — with the same standards I'd apply to any product team. I'm an early adopter of AI-assisted development and hold APMG Scrum Master certification.
-          </p>
+          <p
+            class={linkClass}
+            set:html={linkCompanies(
+              "Outside full-time roles I take on freelance contract work — Ticket Tiger, d3-digital, and others — with the same standards I'd apply to any product team. I'm an early adopter of AI-assisted development and hold APMG Scrum Master certification.",
+            )}
+          />
         </div>
 
         <div class="mt-10">

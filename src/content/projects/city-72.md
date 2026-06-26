@@ -13,7 +13,7 @@ repoUrl: https://github.com/Hanieh73/The-Lord-of-the-strings
 
 ## Background
 
-At La Fosse Academy in the final project, we were required to solve the problem of our choice and we chose the lack of engagement in learning materials. To resolve this, we created a text based adventure game called City 72 in which users can play the game, and during their adventure they will have challenges to attempt which will test their knowledge on GCSE level knowledge.
+At [La Fosse Academy](https://www.lafosse.com/academy) in the final project, we were required to solve the problem of our choice and we chose the lack of engagement in learning materials. To resolve this, we created a text based adventure game called City 72 in which users can play the game, and during their adventure they will have challenges to attempt which will test their knowledge on GCSE level knowledge.
 
 The game consists of a frontend made in React which connects with the backend and OpenAI to create the story. The backend includes the database connection and OpenAI integration, all built in an MVC structure.
 

@@ -12,4 +12,4 @@ repoUrl: https://github.com/Tayeeb27/Pokemon-App-React
 
 ## Background
 
-At La Fosse Academy we were required to create a Pokemon based app using React components and an external API — in this case the Pokemon API.
+At [La Fosse Academy](https://www.lafosse.com/academy) we were required to create a Pokemon based app using React components and an external API — in this case the Pokemon API.

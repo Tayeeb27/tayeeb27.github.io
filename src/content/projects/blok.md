@@ -2,8 +2,8 @@
 title: Blok
 subtitle: Text-Based Python Game
 summary: A text-based adventure game built in Python during university.
-featured: false
-order: 5
+featured: true
+order: 3
 tech: [Python]
 images: [blok1.png]
 imageAlt: Blok text-based Python game

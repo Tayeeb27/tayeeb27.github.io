@@ -12,4 +12,4 @@ repoUrl: https://github.com/Tayeeb27/SuperHeroes
 
 ## Background
 
-At La Fosse Academy, for the React Hackathon we were required to utilise an API and use it to create an app of your choice. I decided to create a Fact App where you can add your favourite Heroes to your list and read about them.
+At [La Fosse Academy](https://www.lafosse.com/academy), for the React Hackathon we were required to utilise an API and use it to create an app of your choice. I decided to create a Fact App where you can add your favourite Heroes to your list and read about them.

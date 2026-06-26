@@ -4,6 +4,7 @@
       "id": "talentmapper",
       "date": "Feb 2026 – Jul 2026",
       "title": "TalentMapper",
+      "url": "https://talentmapper.com",
       "role": "Full-Stack Engineer",
       "description": "Talent-intelligence SaaS — one of the first in-house engineers as development moved in-house. Led the Ant Design 6 and React 19 migration and re-architected the Gatsby front end into a high-performance React SPA. Owned the Axios / TanStack Query REST migration, built Gemini-powered skill suggestions and a CV-processing pipeline, and deployed Metabase as the company analytics platform. Took formal ownership of the bug backlog and expanded into GCP, Grafana, and Terraform."
     },
@@ -18,6 +19,7 @@
       "id": "kukd",
       "date": "May 2024 – Dec 2025",
       "title": "Kukd.com",
+      "url": "https://www.kukd.com",
       "role": "Software Developer",
       "description": "Takeaway ordering and table-reservation platform — progressed from Junior Developer to Software Engineer. Led the Next.js v8–v15 upgrade, owned Bvaah (wedding-planning app), and delivered React, React Native and Flutter apps serving 50,000+ customers monthly. Built for Euro Foods Group and Masala Bazaar, integrated Stripe and Checkout.com, optimised Express/Knex APIs, and deployed on AWS with GA4 and Firebase."
     },
@@ -25,6 +27,7 @@
       "id": "lafosse",
       "date": "Sept 2023 – Dec 2023",
       "title": "La Fosse Academy",
+      "url": "https://www.lafosse.com/academy",
       "role": "Software Trainee",
       "description": "Intensive full-stack bootcamp with Agile delivery practice. Graduated at 96%, leading a team to deliver a full-stack booking platform and building CITY 72 — a React adventure game with AI-generated narratives."
     }
@@ -34,6 +37,7 @@
       "id": "cardiff",
       "date": "2020 – 2023",
       "title": "Cardiff University",
+      "url": "https://www.cardiff.ac.uk",
       "role": "BSc Computer Science",
       "description": "Grade: 2:1"
     },
@@ -41,6 +45,7 @@
       "id": "bassaleg",
       "date": "2018 – 2020",
       "title": "Bassaleg School",
+      "url": "https://www.bassaleg.org.uk",
       "role": "A Levels",
       "description": "Mathematics (A), Computer Science (A), Physics (B)"
     },
