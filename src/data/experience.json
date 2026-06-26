@@ -1,0 +1,55 @@
+{
+  "work": [
+    {
+      "id": "talentmapper",
+      "date": "Feb 2026 – Jul 2026",
+      "title": "TalentMapper",
+      "role": "Full-Stack Engineer",
+      "description": "Talent-intelligence SaaS — one of the first in-house engineers as development moved in-house. Led the Ant Design 6 and React 19 migration and re-architected the Gatsby front end into a high-performance React SPA. Owned the Axios / TanStack Query REST migration, built Gemini-powered skill suggestions and a CV-processing pipeline, and deployed Metabase as the company analytics platform. Took formal ownership of the bug backlog and expanded into GCP, Grafana, and Terraform."
+    },
+    {
+      "id": "freelance",
+      "date": "2025 – Present",
+      "title": "Freelance / Contract",
+      "role": "Full-Stack Developer",
+      "description": "Contract work alongside full-time roles. Delivered Ticket Tiger's React Native (Expo) ticketing app with WhatsApp automation and check-in features; built Forms Offline and Social Schedule for d3-digital (offline sync, Stripe, 2FA, and calendar integrations); plus bespoke business and e-commerce solutions."
+    },
+    {
+      "id": "kukd",
+      "date": "May 2024 – Dec 2025",
+      "title": "Kukd.com",
+      "role": "Software Developer",
+      "description": "Takeaway ordering and table-reservation platform — progressed from Junior Developer to Software Engineer. Led the Next.js v8–v15 upgrade, owned Bvaah (wedding-planning app), and delivered React, React Native and Flutter apps serving 50,000+ customers monthly. Built for Euro Foods Group and Masala Bazaar, integrated Stripe and Checkout.com, optimised Express/Knex APIs, and deployed on AWS with GA4 and Firebase."
+    },
+    {
+      "id": "lafosse",
+      "date": "Sept 2023 – Dec 2023",
+      "title": "La Fosse Academy",
+      "role": "Software Trainee",
+      "description": "Intensive full-stack bootcamp with Agile delivery practice. Graduated at 96%, leading a team to deliver a full-stack booking platform and building CITY 72 — a React adventure game with AI-generated narratives."
+    }
+  ],
+  "education": [
+    {
+      "id": "cardiff",
+      "date": "2020 – 2023",
+      "title": "Cardiff University",
+      "role": "BSc Computer Science",
+      "description": "Grade: 2:1"
+    },
+    {
+      "id": "bassaleg",
+      "date": "2018 – 2020",
+      "title": "Bassaleg School",
+      "role": "A Levels",
+      "description": "Mathematics (A), Computer Science (A), Physics (B)"
+    },
+    {
+      "id": "certs",
+      "date": "2023 – 2026",
+      "title": "Certifications",
+      "role": "Professional development",
+      "description": "APMG Scrum Master (2026) · Google Cloud Associate Cloud Engineer (2026) · Agile & Scrum Fundamentals, La Fosse Academy (2023)"
+    }
+  ]
+}

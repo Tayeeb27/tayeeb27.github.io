@@ -1,0 +1,43 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  subtitle: string;
+  summary: string;
+  tech: string[];
+  image: string;
+  imageAlt?: string;
+}
+
+const { id, title, subtitle, summary, tech, image, imageAlt } = Astro.props;
+---
+
+<article class="group surface-card-glow flex flex-col overflow-hidden hover:-translate-y-1">
+  <a href={`/projects/${id}`} class="relative block overflow-hidden">
+    <div class="absolute left-3 top-3 z-10 rounded border border-border bg-background/80 px-2 py-0.5 font-mono text-[10px] text-accent backdrop-blur-sm">
+      {tech[0]}
+    </div>
+    <img
+      src={`/images/projects/${image}`}
+      alt={imageAlt ?? `${title} project screenshot`}
+      class="aspect-video w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+      loading="lazy"
+      decoding="async"
+    />
+  </a>
+  <div class="flex flex-1 flex-col border-t border-border p-6">
+    <p class="font-mono text-xs text-accent">{subtitle}</p>
+    <h3 class="mt-2 text-lg font-semibold text-foreground">
+      <a href={`/projects/${id}`} class="transition hover:text-accent">{title}</a>
+    </h3>
+    <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">{summary}</p>
+    <div class="mt-4 flex flex-wrap gap-1.5">
+      {tech.slice(0, 4).map((item) => (
+        <span class="tech-tag">{item}</span>
+      ))}
+    </div>
+    <a href={`/projects/${id}`} class="mt-4 font-mono text-xs text-accent transition hover:text-cyan-300">
+      read_case_study() →
+    </a>
+  </div>
+</article>

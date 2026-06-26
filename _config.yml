@@ -1,5 +1,0 @@
-# Jekyll configuration for clean URLs
-permalink: /:title/
-relative_links:
-  enabled: true
-  collections: true 

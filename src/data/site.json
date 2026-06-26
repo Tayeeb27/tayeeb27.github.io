@@ -1,0 +1,16 @@
+{
+  "name": "Tayeeb Islam",
+  "role": "Full Stack Engineer",
+  "tagline": "Production front end at scale, APIs behind it, and the data to prove it works.",
+  "description": "Full-Stack Software Engineer based in Newport, UK. Over two years' commercial experience across high-volume consumer apps and B2B SaaS with React, TypeScript, Python, and cloud platforms.",
+  "email": "mail@tayeebislam.com",
+  "phone": "+447516287962",
+  "location": "Newport, UK",
+  "linkedin": "https://www.linkedin.com/in/tayeebislam",
+  "github": "https://github.com/Tayeeb27",
+  "cvUrl": "/cv/Tayeeb-Islam-CV.docx",
+  "cvFilename": "Tayeeb-Islam-CV.docx",
+  "photo": "/images/IMG_6685.jpeg",
+  "status": "Open to opportunities",
+  "stack": ["React", "TypeScript", "Node.js", "Python", "PostgreSQL", "AWS", "GCP"]
+}

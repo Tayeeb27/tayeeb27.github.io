@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-background: #09090b;
+  --color-surface: #18181b;
+  --color-surface-elevated: #27272a;
+  --color-foreground: #fafafa;
+  --color-muted: #a1a1aa;
+  --color-accent: #22d3ee;
+  --color-accent-dim: #0891b2;
+  --color-success: #34d399;
+  --color-border: #3f3f46;
+  --color-border-bright: #52525b;
+
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --radius-card: 10px;
+  --radius-image: 12px;
+
+  --max-width-content: 64rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgb(34 211 238 / 0.08), transparent),
+      radial-gradient(circle at 1px 1px, rgb(63 63 70 / 0.22) 1px, transparent 0);
+    background-size: 100% 100%, 28px 28px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-background transition hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg border border-border bg-surface px-5 py-2.5 text-sm font-medium text-foreground transition hover:border-accent hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background;
+  }
+
+  .section-heading {
+    @apply text-3xl font-semibold tracking-tight text-foreground sm:text-4xl;
+  }
+
+  .section-subheading {
+    @apply mt-3 max-w-2xl text-lg text-muted;
+  }
+
+  .section-label {
+    @apply font-mono text-xs font-medium uppercase tracking-widest text-accent;
+  }
+
+  .surface-card {
+    @apply rounded-card border border-border bg-surface transition hover:border-border-bright;
+  }
+
+  .surface-card-glow {
+    @apply rounded-card border border-border bg-surface transition hover:border-border-bright hover:shadow-[0_0_24px_-4px_rgb(34_211_238_/_0.15)];
+  }
+
+  .tech-tag {
+    @apply rounded-md border border-border bg-surface-elevated px-2.5 py-1 font-mono text-xs text-muted;
+  }
+
+  .tech-tag-active {
+    @apply border-accent/40 bg-accent/10 text-accent;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center gap-2 rounded-full border border-success/30 bg-success/10 px-3 py-1 font-mono text-xs text-success;
+  }
+
+  .terminal-block {
+    @apply rounded-card border border-border bg-surface-elevated/80 p-4 font-mono text-sm leading-relaxed text-muted backdrop-blur-sm;
+  }
+
+  .page-header {
+    @apply border-b border-border bg-surface/50;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-foreground to-muted bg-clip-text text-transparent;
+  }
+}

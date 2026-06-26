@@ -1,0 +1,28 @@
+---
+interface TimelineItem {
+  date: string;
+  title: string;
+  role: string;
+  description: string;
+}
+
+interface Props {
+  items: TimelineItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="relative space-y-8 before:absolute before:left-0 before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-border sm:before:left-[11rem]">
+  {items.map((item) => (
+    <div class="relative pl-6 sm:grid sm:grid-cols-[11rem_1fr] sm:gap-8 sm:pl-0">
+      <div class="absolute left-0 top-2 h-2 w-2 -translate-x-1/2 rounded-full bg-accent shadow-[0_0_8px_rgb(34_211_238_/_0.6)] sm:left-[11rem]" aria-hidden="true"></div>
+      <time class="whitespace-nowrap font-mono text-xs leading-snug text-muted sm:mt-1 sm:pr-4 sm:text-right">{item.date}</time>
+      <div class="surface-card p-6">
+        <h3 class="text-lg font-semibold text-foreground">{item.title}</h3>
+        <p class="mt-1 font-mono text-xs text-accent">{item.role}</p>
+        <p class="mt-3 text-sm leading-relaxed text-muted">{item.description}</p>
+      </div>
+    </div>
+  ))}
+</div>

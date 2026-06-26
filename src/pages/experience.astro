@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Timeline from '../components/Timeline.astro';
+import experience from '../data/experience.json';
+---
+
+<BaseLayout title="Experience" description="Work experience and education of Tayeeb Islam">
+  <section class="page-header">
+    <div class="mx-auto max-w-content px-6 py-12 sm:px-8">
+      <p class="section-label">// experience</p>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">Career timeline</h1>
+      <p class="mt-4 max-w-2xl text-lg text-muted">
+        From tech training to shipping production features as a full stack engineer.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-content px-6 py-16 sm:px-8 lg:py-20">
+    <h2 class="mb-8 font-mono text-sm text-accent">work_history[]</h2>
+    <Timeline items={experience.work} />
+
+    <h2 class="mb-8 mt-20 font-mono text-sm text-accent">education[]</h2>
+    <Timeline items={experience.education} />
+  </section>
+</BaseLayout>

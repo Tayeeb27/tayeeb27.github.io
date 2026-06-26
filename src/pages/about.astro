@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site.json';
+import skills from '../data/skills.json';
+---
+
+<BaseLayout title="About" description={`About ${site.name} — ${site.role}`}>
+  <section class="page-header">
+    <div class="mx-auto max-w-content px-6 py-12 sm:px-8">
+      <p class="section-label">// about</p>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">About me</h1>
+      <p class="mt-4 max-w-2xl text-lg text-muted">
+        Full-stack engineer with commercial experience across high-volume consumer apps and B2B SaaS.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-content px-6 py-16 sm:px-8 lg:py-20">
+    <div class="grid gap-12 lg:grid-cols-[260px_1fr] lg:items-start">
+      <div class="relative">
+        <div class="absolute -inset-2 rounded-image bg-accent/10 blur-xl" aria-hidden="true"></div>
+        <div class="relative overflow-hidden rounded-image border border-border-bright">
+          <div class="border-b border-border bg-surface-elevated px-3 py-2 font-mono text-[10px] text-muted">
+            about.md
+          </div>
+          <img
+            src={site.photo}
+            alt={`Portrait of ${site.name}`}
+            class="aspect-[3/4] w-full object-cover"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+        <a
+          href={site.cvUrl}
+          download={site.cvFilename}
+          class="btn-primary mt-6 flex w-full items-center justify-center gap-2"
+        >
+          Download CV
+        </a>
+      </div>
+
+      <div>
+        <div class="space-y-6 text-lg leading-relaxed text-muted">
+          <p class="text-foreground">
+            I'm a full-stack software engineer based in Newport, UK, with over two years of commercial experience shipping production software for consumer platforms and B2B SaaS.
+          </p>
+          <p>
+            I work end to end — from React and TypeScript front ends through REST APIs, databases, and cloud deployment. At Kukd.com I progressed from junior developer to software engineer, delivering apps used by 50,000+ customers monthly. At TalentMapper I was one of the first in-house engineers, leading major front-end migrations, building AI-powered features, and owning the analytics platform the business runs on.
+          </p>
+          <p>
+            What I care about in practice: taking work from brief to sign-off, writing code the team can maintain, and closing the gap between engineering and the business. I've deployed Metabase dashboards that feed sales conversations, documented patterns for the team, and picked up DevOps along the way — GCP, Grafana, Terraform, CI/CD.
+          </p>
+          <p>
+            Outside full-time roles I take on freelance contract work — Ticket Tiger, d3-digital, and others — with the same standards I'd apply to any product team. I'm an early adopter of AI-assisted development and hold APMG Scrum Master certification.
+          </p>
+        </div>
+
+        <div class="mt-10">
+          <p class="section-label mb-4">core_stack</p>
+          <div class="flex flex-wrap gap-2">
+            {skills.highlights.map((skill) => (
+              <span class="tech-tag tech-tag-active">{skill}</span>
+            ))}
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="/experience" class="btn-primary">View experience</a>
+          <a href="/projects" class="btn-secondary">See projects</a>
+          <a href="/contact" class="btn-secondary">Contact me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

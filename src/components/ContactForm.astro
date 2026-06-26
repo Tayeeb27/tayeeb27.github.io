@@ -1,0 +1,72 @@
+---
+import site from '../data/site.json';
+---
+
+<form id="contact-form" class="surface-card space-y-6 p-8">
+  <p class="font-mono text-xs text-accent">send_message(payload)</p>
+  <p class="text-sm text-muted">
+    Opens your email app with your message addressed to <span class="text-foreground">{site.email}</span>.
+  </p>
+  <div>
+    <label for="name" class="block font-mono text-xs text-muted">name</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      required
+      autocomplete="name"
+      class="mt-2 w-full rounded-lg border border-border bg-surface-elevated px-4 py-2.5 text-foreground focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+    />
+  </div>
+  <div>
+    <label for="email" class="block font-mono text-xs text-muted">your_email</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      required
+      autocomplete="email"
+      class="mt-2 w-full rounded-lg border border-border bg-surface-elevated px-4 py-2.5 text-foreground focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+    />
+  </div>
+  <div>
+    <label for="subject" class="block font-mono text-xs text-muted">subject</label>
+    <input
+      type="text"
+      name="subject"
+      id="subject"
+      placeholder="Portfolio enquiry"
+      class="mt-2 w-full rounded-lg border border-border bg-surface-elevated px-4 py-2.5 text-foreground focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+    />
+  </div>
+  <div>
+    <label for="message" class="block font-mono text-xs text-muted">message</label>
+    <textarea
+      name="message"
+      id="message"
+      rows="5"
+      required
+      class="mt-2 w-full rounded-lg border border-border bg-surface-elevated px-4 py-2.5 text-foreground focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+    ></textarea>
+  </div>
+  <button type="submit" class="btn-primary w-full sm:w-auto">Send message</button>
+</form>
+
+<script define:vars={{ toEmail: site.email }}>
+  const form = document.getElementById('contact-form');
+
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const data = new FormData(form);
+    const name = String(data.get('name') ?? '').trim();
+    const fromEmail = String(data.get('email') ?? '').trim();
+    const subject = String(data.get('subject') ?? 'Portfolio enquiry').trim() || 'Portfolio enquiry';
+    const message = String(data.get('message') ?? '').trim();
+
+    const body = [message, `From: ${name}`, `${fromEmail}`, ''].join('\n');
+
+    const mailto = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+  });
+</script>

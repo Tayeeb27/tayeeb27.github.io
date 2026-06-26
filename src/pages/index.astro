@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import SkillsSection from '../components/SkillsSection.astro';
+import { getCollection } from 'astro:content';
+
+const allProjects = await getCollection('projects');
+const featuredProjects = allProjects
+  .filter((p) => p.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout>
+  <Hero />
+
+  <section class="border-t border-border py-20">
+    <div class="mx-auto max-w-content px-6 sm:px-8">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <p class="section-label">// featured_work</p>
+          <h2 class="section-heading mt-2">Shipped projects</h2>
+          <p class="section-subheading">
+            End-to-end builds — frontend, backend, and data layer.
+          </p>
+        </div>
+        <a href="/projects" class="hidden shrink-0 font-mono text-xs text-accent transition hover:text-cyan-300 sm:block">
+          view_all() →
+        </a>
+      </div>
+      <div class="mt-12 grid gap-8 sm:grid-cols-2">
+        {featuredProjects.map((project) => (
+          <ProjectCard
+            id={project.id}
+            title={project.data.title}
+            subtitle={project.data.subtitle}
+            summary={project.data.summary}
+            tech={project.data.tech}
+            image={project.data.images[0]}
+            imageAlt={project.data.imageAlt}
+          />
+        ))}
+      </div>
+      <div class="mt-8 text-center sm:hidden">
+        <a href="/projects" class="btn-secondary">View all projects</a>
+      </div>
+    </div>
+  </section>
+
+  <SkillsSection />
+
+  <section class="border-t border-border py-20">
+    <div class="mx-auto max-w-content px-6 text-center sm:px-8">
+      <p class="section-label">// contact</p>
+      <h2 class="section-heading mt-2">Let's build something</h2>
+      <p class="section-subheading mx-auto">
+        Open to full stack roles, freelance work, and interesting technical challenges.
+      </p>
+      <a href="/contact" class="btn-primary mt-8">Get in touch</a>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,47 @@
+{
+  "categories": [
+    {
+      "name": "Languages & runtimes",
+      "skills": ["Python", "Java", "HTML5", "CSS3", "JavaScript", "TypeScript", "C#", "VB.NET", "MATLAB", "Swift"]
+    },
+    {
+      "name": "Frontend & mobile",
+      "skills": ["React", "Redux", "Next.js", "Bootstrap", "Flutter"]
+    },
+    {
+      "name": "Databases & data",
+      "skills": ["SQL", "PostgreSQL", "MySQL", "MS SQL Server", "MongoDB", "Neo4j"]
+    },
+    {
+      "name": "Backend, APIs & cloud",
+      "skills": ["Node.js", "Express", "Django", "Flask", "Firebase", "AWS"]
+    },
+    {
+      "name": "Tooling & delivery",
+      "skills": ["Git", "GitHub", "Docker", "npm", "Jest", "VS Code", "Visual Studio", "Microsoft 365"]
+    }
+  ],
+  "highlights": ["React", "TypeScript", "Node.js", "PostgreSQL", "Next.js", "Docker", "AWS", "Python"],
+  "stackLayers": [
+    {
+      "layer": "Frontend",
+      "description": "Interfaces & client apps",
+      "skills": ["React", "TypeScript", "Next.js", "Redux"]
+    },
+    {
+      "layer": "Backend",
+      "description": "APIs & business logic",
+      "skills": ["Node.js", "Express", "Python", "Django"]
+    },
+    {
+      "layer": "Data",
+      "description": "Storage & persistence",
+      "skills": ["PostgreSQL", "MongoDB", "SQL", "Neo4j"]
+    },
+    {
+      "layer": "DevOps",
+      "description": "Delivery & infrastructure",
+      "skills": ["Docker", "AWS", "GitHub", "Jest"]
+    }
+  ]
+}

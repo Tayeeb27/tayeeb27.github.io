@@ -1,0 +1,57 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import ImageGallery from '../components/ImageGallery.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+const { title, subtitle, tech, images, imageAlt, demoUrl, repoUrl, repoUrl2, repoLabel2 } = project.data;
+---
+
+<BaseLayout title={title} description={project.data.summary}>
+  <article class="mx-auto max-w-content px-6 py-16 sm:px-8 lg:py-24">
+    <a href="/projects" class="mb-8 inline-flex items-center font-mono text-xs text-muted transition hover:text-accent">
+      <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      back_to_projects()
+    </a>
+
+    <header class="mb-10">
+      <p class="section-label">{subtitle}</p>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">{title}</h1>
+      <p class="mt-4 max-w-3xl text-lg text-muted">{project.data.summary}</p>
+      <div class="mt-6 flex flex-wrap gap-2">
+        {tech.map((item) => (
+          <span class="tech-tag tech-tag-active">{item}</span>
+        ))}
+      </div>
+      <div class="mt-8 flex flex-wrap gap-3">
+        {demoUrl && (
+          <a href={demoUrl} target="_blank" rel="noopener noreferrer" class="btn-primary">
+            Live demo
+          </a>
+        )}
+        {repoUrl && (
+          <a href={repoUrl} target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            Source code
+          </a>
+        )}
+        {repoUrl2 && (
+          <a href={repoUrl2} target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            {repoLabel2 ?? 'Additional source'}
+          </a>
+        )}
+      </div>
+    </header>
+
+    <ImageGallery images={images} alt={imageAlt ?? `${title} screenshot`} />
+
+    <div class="prose prose-invert mt-12 max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-a:text-accent prose-code:text-accent">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>

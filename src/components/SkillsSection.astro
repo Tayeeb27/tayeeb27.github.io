@@ -1,0 +1,39 @@
+---
+import skills from '../data/skills.json';
+---
+
+<section class="border-t border-border bg-surface/30 py-20">
+  <div class="mx-auto max-w-content px-6 sm:px-8">
+    <p class="section-label">// tech_stack</p>
+    <h2 class="section-heading mt-2">Full stack toolkit</h2>
+    <p class="section-subheading">
+      From UI components to API endpoints, databases, and deployment pipelines.
+    </p>
+
+    <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {skills.stackLayers.map((layer, index) => (
+        <div class="surface-card-glow flex flex-col p-5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs text-accent">0{index + 1}</span>
+            <span class="rounded border border-border px-2 py-0.5 font-mono text-[10px] uppercase text-muted">
+              {layer.layer}
+            </span>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-foreground">{layer.layer}</h3>
+          <p class="mt-1 text-sm text-muted">{layer.description}</p>
+          <div class="mt-4 flex flex-1 flex-wrap gap-1.5">
+            {layer.skills.map((skill) => (
+              <span class="tech-tag">{skill}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 flex flex-wrap gap-2">
+      {skills.highlights.map((skill) => (
+        <span class="tech-tag tech-tag-active">{skill}</span>
+      ))}
+    </div>
+  </div>
+</section>

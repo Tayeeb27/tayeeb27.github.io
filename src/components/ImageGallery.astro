@@ -1,0 +1,37 @@
+---
+interface Props {
+  images: string[];
+  alt: string;
+}
+
+const { images, alt } = Astro.props;
+const primary = images[0];
+const rest = images.slice(1);
+---
+
+<div class="space-y-4">
+  <div class="overflow-hidden rounded-image border border-border-bright bg-surface">
+    <img
+      src={`/images/projects/${primary}`}
+      alt={alt}
+      class="w-full object-cover"
+      loading="eager"
+      decoding="async"
+    />
+  </div>
+  {rest.length > 0 && (
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {rest.map((image, index) => (
+        <div class="overflow-hidden rounded-image border border-border-bright bg-surface">
+          <img
+            src={`/images/projects/${image}`}
+            alt={`${alt} ${index + 2}`}
+            class="aspect-video w-full object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      ))}
+    </div>
+  )}
+</div>
