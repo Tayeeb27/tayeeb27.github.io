@@ -6,6 +6,12 @@
       "title": "TalentMapper",
       "url": "https://talentmapper.com",
       "role": "Full-Stack Engineer",
+      "current": true,
+      "highlights": [
+        "One of the first in-house engineers as development moved in-house",
+        "Led Ant Design 6 & React 19 migration into a high-performance React SPA",
+        "Built Gemini skill suggestions, CV pipeline, and Metabase analytics platform"
+      ],
       "description": "Talent-intelligence SaaS — one of the first in-house engineers as development moved in-house. Led the Ant Design 6 and React 19 migration and re-architected the Gatsby front end into a high-performance React SPA. Owned the Axios / TanStack Query REST migration, built Gemini-powered skill suggestions and a CV-processing pipeline, and deployed Metabase as the company analytics platform. Took formal ownership of the bug backlog and expanded into GCP, Grafana, and Terraform."
     },
     {
@@ -13,6 +19,11 @@
       "date": "2025 – Present",
       "title": "Freelance / Contract",
       "role": "Full-Stack Developer",
+      "highlights": [
+        "Ticket Tiger — React Native ticketing app with WhatsApp automation",
+        "Forms Offline & Social Schedule for d3-digital (Stripe, 2FA, calendar sync)",
+        "Bespoke business and e-commerce solutions alongside full-time roles"
+      ],
       "description": "Contract work alongside full-time roles. Delivered Ticket Tiger's React Native (Expo) ticketing app with WhatsApp automation and check-in features; built Forms Offline and Social Schedule for d3-digital (offline sync, Stripe, 2FA, and calendar integrations); plus bespoke business and e-commerce solutions."
     },
     {
@@ -21,6 +32,11 @@
       "title": "Kukd.com",
       "url": "https://www.kukd.com",
       "role": "Software Developer",
+      "highlights": [
+        "Progressed Junior → Software Engineer on a 50k+ monthly user platform",
+        "Led Next.js v8–v15 upgrade and owned Bvaah wedding-planning app",
+        "React, React Native & Flutter apps with Stripe, AWS, and Firebase"
+      ],
       "description": "Takeaway ordering and table-reservation platform — progressed from Junior Developer to Software Engineer. Led the Next.js v8–v15 upgrade, owned Bvaah (wedding-planning app), and delivered React, React Native and Flutter apps serving 50,000+ customers monthly. Built for Euro Foods Group and Masala Bazaar, integrated Stripe and Checkout.com, optimised Express/Knex APIs, and deployed on AWS with GA4 and Firebase."
     },
     {
@@ -29,6 +45,11 @@
       "title": "La Fosse Academy",
       "url": "https://www.lafosse.com/academy",
       "role": "Software Trainee",
+      "highlights": [
+        "Intensive full-stack bootcamp — graduated at 96%",
+        "Led team delivery of a full-stack booking platform",
+        "Built CITY 72 — React adventure game with AI-generated narratives"
+      ],
       "description": "Intensive full-stack bootcamp with Agile delivery practice. Graduated at 96%, leading a team to deliver a full-stack booking platform and building CITY 72 — a React adventure game with AI-generated narratives."
     }
   ],
