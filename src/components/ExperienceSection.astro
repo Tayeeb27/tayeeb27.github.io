@@ -16,12 +16,6 @@ interface WorkItem {
 const work = experience.work as WorkItem[];
 const [featured, ...rest] = work;
 
-const stats = [
-  { value: '2+', label: 'Years commercial' },
-  { value: '50k+', label: 'Monthly users shipped' },
-  { value: '4', label: 'Companies & clients' },
-];
-
 function getInitials(title: string): string {
   const words = title.replace(/[^a-zA-Z\s]/g, '').trim().split(/\s+/);
   if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
@@ -38,19 +32,15 @@ function getInitials(title: string): string {
         <p class="section-subheading">
           Commercial roles across B2B SaaS, consumer platforms, and contract delivery.
         </p>
+        <span class="mt-4 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 font-mono text-xs shadow-[0_0_16px_-4px_rgb(34_211_238_/_0.35)]">
+          <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" aria-hidden="true"></span>
+          <span class="font-bold text-accent">2+</span>
+          <span class="text-muted">years commercial</span>
+        </span>
       </div>
       <a href="/experience" class="hidden shrink-0 font-mono text-xs text-accent transition hover:text-cyan-300 sm:block">
         view_all() →
       </a>
-    </div>
-
-    <div class="mt-10 grid gap-3 sm:grid-cols-3">
-      {stats.map((stat) => (
-        <div class="surface-card px-5 py-4 text-center sm:text-left">
-          <p class="font-mono text-2xl font-semibold text-accent">{stat.value}</p>
-          <p class="mt-1 text-sm text-muted">{stat.label}</p>
-        </div>
-      ))}
     </div>
 
     <article class="group relative mt-10 overflow-hidden rounded-card border border-accent/30 bg-surface shadow-[0_0_40px_-8px_rgb(34_211_238_/_0.2)] transition hover:border-accent/50">
